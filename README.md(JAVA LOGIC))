@@ -1,0 +1,84 @@
+# fantasyIA
+@Entity
+public class Player {
+    @Id @GeneratedValue
+    private Long id;
+    private String name;
+    private int position;
+}
+@Entity
+public class Bid {
+    @Id @GeneratedValue
+    private Long id;
+
+    @ManyToOne
+    private Player player;
+
+    private String team;
+    private int amount;
+    private Instant timestamp;
+}
+@Service
+public class AuctionService {
+
+    private final AtomicInteger currentBid = new AtomicInteger(0);
+    private String leadingTeam;
+
+    public synchronized boolean placeBid(String team, int amount) {
+        if (amount <= currentBid.get()) {
+            return false;
+        }
+        currentBid.set(amount);
+        leadingTeam = team;
+        return true;
+    }
+}
+@RestController
+@RequestMapping("/api/auction")
+public class AuctionController {
+
+    private final AuctionService auctionService;
+
+    public AuctionController(AuctionService auctionService) {
+        this.auctionService = auctionService;
+    }
+
+    @PostMapping("/bid")
+    public ResponseEntity<?> bid(@RequestBody BidRequest request) {
+        boolean success = auctionService.placeBid(
+            request.getTeam(),
+            request.getAmount()
+        );
+
+        return success
+            ? ResponseEntity.ok().build()
+            : ResponseEntity.status(409).build();
+    }
+}
+@Configuration
+@EnableWebSocketMessageBroker
+public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
+
+    @Override
+    public void configureMessageBroker(MessageBrokerRegistry config) {
+        config.enableSimpleBroker("/topic");
+        config.setApplicationDestinationPrefixes("/app");
+    }
+
+    @Override
+    public void registerStompEndpoints(StompEndpointRegistry registry) {
+        registry.addEndpoint("/ws").setAllowedOrigins("*");
+    }
+}
+@Autowired
+private SimpMessagingTemplate messagingTemplate;
+
+public void broadcastBid(Bid bid) {
+    messagingTemplate.convertAndSend(
+        "/topic/bids",
+        bid
+    );
+}
+
+
+
