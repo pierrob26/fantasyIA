@@ -1,0 +1,22 @@
+backend/
+├── src/main/java/com/example/fantasyauction/
+│   ├── FantasyAuctionApplication.java
+│   ├── config/
+│   │   └── WebSocketConfig.java
+│   ├── controller/
+│   │   ├── AuctionController.java
+│   │   └── BidController.java
+│   ├── model/
+│   │   ├── League.java
+│   │   ├── Team.java
+│   │   ├── Player.java
+│   │   └── Bid.java
+│   ├── repository/
+│   ├── service/
+│   │   └── AuctionService.java
+│   └── dto/
+│
+├── Dockerfile
+└── pom.xml
+(RELAVENT STUFF)
+(Spring Boot backend structure)
