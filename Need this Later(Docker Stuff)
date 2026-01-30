@@ -1,0 +1,38 @@
+1. Install Docker
+First, make sure Docker is installed on your system. You can download it from docker.com for Windows, Mac, or Linux.
+2. Pull an Image
+Containers are created from images. To get an image from Docker Hub:
+bashdocker pull ubuntu
+3. Run a Container
+The simplest way to create and start a container:
+bashdocker run -it ubuntu
+This creates a container from the ubuntu image and starts an interactive terminal session.
+Common Options
+When running containers, you'll often use these flags:
+
+-d — Run in detached mode (background)
+-p — Map ports (e.g., -p 8080:80 maps host port 8080 to container port 80)
+--name — Give your container a specific name
+-v — Mount volumes for persistent data
+-e — Set environment variables
+
+Example with options:
+bashdocker run -d --name my-nginx -p 8080:80 nginx
+This runs an nginx web server in the background, names it "my-nginx", and makes it accessible on port 8080.
+Managing Containers
+bashdocker ps                  # List running containers
+docker ps -a              # List all containers
+docker stop my-nginx      # Stop a container
+docker start my-nginx     # Start a stopped container
+docker rm my-nginx        # Remove a container
+Using a Dockerfile
+For custom containers, create a Dockerfile:
+dockerfileFROM ubuntu:latest
+RUN apt-get update && apt-get install -y python3
+COPY app.py /app/
+WORKDIR /app
+CMD ["python3", "app.py"]
+Then build and run:
+bashdocker build -t my-app .
+docker run my-app
+Is there a specific type of container or application you're looking to set up?
