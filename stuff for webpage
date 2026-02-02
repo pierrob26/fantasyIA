@@ -1,0 +1,71 @@
+import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function FantasyBaseballApp() {
+  const [screen, setScreen] = useState("commissioner");
+  const [bidHistory, setBidHistory] = useState([
+    { player: "Shohei Ohtani", team: "Team A", amount: 45 },
+    { player: "Ronald Acuña Jr.", team: "Team B", amount: 42 },
+  ]);
+
+  const renderScreen = () => {
+    switch (screen) {
+      case "commissioner":
+        return (
+          <Card className="p-4">
+            <CardContent>
+              <h2 className="text-xl font-bold mb-2">Commissioner Dashboard</h2>
+              <p className="mb-4">Manage league settings, budgets, and teams.</p>
+              <Button onClick={() => alert("Draft started!")}>Start Draft</Button>
+            </CardContent>
+          </Card>
+        );
+      case "teams":
+        return (
+          <Card className="p-4">
+            <CardContent>
+              <h2 className="text-xl font-bold mb-2">Team Dashboard</h2>
+              <p className="mb-4">View roster and place bids.</p>
+              <Button onClick={() => alert("Bid placed!")}>Place Bid</Button>
+            </CardContent>
+          </Card>
+        );
+      case "history":
+        return (
+          <Card className="p-4">
+            <CardContent>
+              <h2 className="text-xl font-bold mb-2">Bid History</h2>
+              <ul className="space-y-2">
+                {bidHistory.map((bid, i) => (
+                  <li key={i} className="border p-2 rounded">
+                    {bid.player} — {bid.team} bid ${bid.amount}
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
+        );
+      default:
+        return null;
+    }
+  };
+
+  return (
+    <div className="p-6 space-y-4">
+      <h1 className="text-2xl font-bold">Fantasy Baseball League</h1>
+      <div className="flex gap-2">
+        <Button variant={screen === "commissioner" ? "default" : "outline"} onClick={() => setScreen("commissioner")}>
+          Commissioner
+        </Button>
+        <Button variant={screen === "teams" ? "default" : "outline"} onClick={() => setScreen("teams")}>
+          Teams
+        </Button>
+        <Button variant={screen === "history" ? "default" : "outline"} onClick={() => setScreen("history")}>
+          Bid History
+        </Button>
+      </div>
+      {renderScreen()}
+    </div>
+  );
+}
