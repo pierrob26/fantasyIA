@@ -1,0 +1,431 @@
+2026-02-05 17:40:51.405 | 
+2026-02-05 17:40:51.405 |   .   ____          _            __ _ _
+2026-02-05 17:40:51.405 |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-02-05 17:40:51.405 | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-02-05 17:40:51.405 |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-02-05 17:40:51.405 |   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-02-05 17:40:51.405 |  =========|_|==============|___/=/_/_/_/
+2026-02-05 17:40:51.405 |  :: Spring Boot ::                (v3.2.0)
+2026-02-05 17:40:51.405 | 
+2026-02-05 17:40:51.450 | 2026-02-06T01:40:51.449Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Starting FantasyIaApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1 (/app.jar started by root in /)
+2026-02-05 17:40:51.450 | 2026-02-06T01:40:51.450Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-05 17:40:51.755 | 2026-02-06T01:40:51.755Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-05 17:40:51.764 | 2026-02-06T01:40:51.764Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2026-02-05 17:40:51.966 | 2026-02-06T01:40:51.966Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-05 17:40:51.970 | 2026-02-06T01:40:51.970Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05 17:40:51.970 | 2026-02-06T01:40:51.970Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-05 17:40:51.987 | 2026-02-06T01:40:51.987Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05 17:40:51.988 | 2026-02-06T01:40:51.988Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2026-02-05 17:40:52.061 | 2026-02-06T01:40:52.060Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-05 17:40:52.086 | 2026-02-06T01:40:52.085Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-05 17:40:52.100 | 2026-02-06T01:40:52.099Z  INFO 1 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-05 17:40:52.185 | 2026-02-06T01:40:52.185Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-05 17:40:52.197 | 2026-02-06T01:40:52.196Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-05 17:40:52.284 | 2026-02-06T01:40:52.284Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b066c33
+2026-02-05 17:40:52.285 | 2026-02-06T01:40:52.285Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-05 17:40:52.417 | 2026-02-06T01:40:52.417Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-05 17:40:52.419 | 2026-02-06T01:40:52.419Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 17:40:52.433 | 2026-02-06T01:40:52.433Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-05 17:40:52.445 | 2026-02-06T01:40:52.444Z  WARN 1 --- [           main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-02-05 17:40:52.599 | 2026-02-06T01:40:52.599Z  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a48c398, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b4ba615, org.springframework.security.web.context.SecurityContextHolderFilter@7b2e931, org.springframework.security.web.header.HeaderWriterFilter@2c7375da, org.springframework.web.filter.CorsFilter@4407b042, org.springframework.security.web.csrf.CsrfFilter@3fe98084, org.springframework.security.web.authentication.logout.LogoutFilter@1d556461, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2676d96a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e89eba7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bc25ac2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41f686af, org.springframework.security.web.access.ExceptionTranslationFilter@690ed13a, org.springframework.security.web.access.intercept.AuthorizationFilter@27ec0d06]
+2026-02-05 17:40:52.689 | 2026-02-06T01:40:52.689Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-05 17:40:52.694 | 2026-02-06T01:40:52.693Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Started FantasyIaApplication in 1.408 seconds (process running for 1.591)
+2026-02-05 17:48:45.197 | 2026-02-06T01:48:45.196Z  INFO 1 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-05 17:48:45.197 | 2026-02-06T01:48:45.197Z  INFO 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-05 17:48:45.198 | 2026-02-06T01:48:45.197Z  INFO 1 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-02-05 17:48:45.203 | 2026-02-06T01:48:45.203Z  WARN 1 --- [nio-8080-exec-2] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-05 17:48:45.208 | 2026-02-06T01:48:45.208Z  WARN 1 --- [nio-8080-exec-2] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-05 17:52:32.187 | 2026-02-06T01:52:32.187Z  INFO 1 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 17:52:32.188 | 2026-02-06T01:52:32.188Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-05 17:52:32.190 | 2026-02-06T01:52:32.190Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-05 17:52:32.690 | 
+2026-02-05 17:52:32.690 |   .   ____          _            __ _ _
+2026-02-05 17:52:32.690 |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-02-05 17:52:32.690 | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-02-05 17:52:32.690 |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-02-05 17:52:32.690 |   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-02-05 17:52:32.690 |  =========|_|==============|___/=/_/_/_/
+2026-02-05 17:52:32.691 |  :: Spring Boot ::                (v3.2.0)
+2026-02-05 17:52:32.691 | 
+2026-02-05 17:52:32.733 | 2026-02-06T01:52:32.732Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Starting FantasyIaApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1 (/app.jar started by root in /)
+2026-02-05 17:52:32.733 | 2026-02-06T01:52:32.733Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-05 17:52:33.038 | 2026-02-06T01:52:33.037Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-05 17:52:33.046 | 2026-02-06T01:52:33.046Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2026-02-05 17:52:33.247 | 2026-02-06T01:52:33.247Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-05 17:52:33.251 | 2026-02-06T01:52:33.251Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05 17:52:33.251 | 2026-02-06T01:52:33.251Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-05 17:52:33.265 | 2026-02-06T01:52:33.265Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05 17:52:33.266 | 2026-02-06T01:52:33.266Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 497 ms
+2026-02-05 17:52:33.327 | 2026-02-06T01:52:33.326Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-05 17:52:33.350 | 2026-02-06T01:52:33.350Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-05 17:52:33.361 | 2026-02-06T01:52:33.360Z  INFO 1 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-05 17:52:33.434 | 2026-02-06T01:52:33.434Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-05 17:52:33.444 | 2026-02-06T01:52:33.444Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-05 17:52:33.516 | 2026-02-06T01:52:33.515Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7ea71fc2
+2026-02-05 17:52:33.516 | 2026-02-06T01:52:33.516Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-05 17:52:33.640 | 2026-02-06T01:52:33.640Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-05 17:52:33.642 | 2026-02-06T01:52:33.642Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 17:52:33.656 | 2026-02-06T01:52:33.656Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-05 17:52:33.667 | 2026-02-06T01:52:33.667Z  WARN 1 --- [           main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-02-05 17:52:33.816 | 2026-02-06T01:52:33.816Z  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2838eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fb5d334, org.springframework.security.web.context.SecurityContextHolderFilter@12548f9a, org.springframework.security.web.header.HeaderWriterFilter@47c81e89, org.springframework.web.filter.CorsFilter@45dc7be, org.springframework.security.web.csrf.CsrfFilter@2b8cf049, org.springframework.security.web.authentication.logout.LogoutFilter@407f2029, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f65aa58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c5a2d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@185339ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d459bda, org.springframework.security.web.access.ExceptionTranslationFilter@46d148bd, org.springframework.security.web.access.intercept.AuthorizationFilter@59a5bb61]
+2026-02-05 17:52:33.912 | 2026-02-06T01:52:33.912Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-05 17:52:33.917 | 2026-02-06T01:52:33.916Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Started FantasyIaApplication in 1.339 seconds (process running for 1.51)
+2026-02-05 17:52:40.210 | 2026-02-06T01:52:40.210Z  INFO 1 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-05 17:52:40.210 | 2026-02-06T01:52:40.210Z  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-05 17:52:40.211 | 2026-02-06T01:52:40.210Z  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-02-05 17:52:40.216 | 2026-02-06T01:52:40.215Z  WARN 1 --- [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-05 17:52:40.220 | 2026-02-06T01:52:40.220Z  WARN 1 --- [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-05 17:55:58.738 | 2026-02-06T01:55:58.738Z  INFO 1 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 17:55:58.739 | 2026-02-06T01:55:58.739Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-05 17:55:58.741 | 2026-02-06T01:55:58.740Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-05 17:56:04.492 | 
+2026-02-05 17:56:04.492 |   .   ____          _            __ _ _
+2026-02-05 17:56:04.492 |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-02-05 17:56:04.492 | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-02-05 17:56:04.492 |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-02-05 17:56:04.492 |   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-02-05 17:56:04.492 |  =========|_|==============|___/=/_/_/_/
+2026-02-05 17:56:04.492 |  :: Spring Boot ::                (v3.2.0)
+2026-02-05 17:56:04.492 | 
+2026-02-05 17:56:04.535 | 2026-02-06T01:56:04.534Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Starting FantasyIaApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1 (/app.jar started by root in /)
+2026-02-05 17:56:04.535 | 2026-02-06T01:56:04.535Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-05 17:56:04.838 | 2026-02-06T01:56:04.838Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-05 17:56:04.845 | 2026-02-06T01:56:04.845Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2026-02-05 17:56:05.035 | 2026-02-06T01:56:05.035Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-05 17:56:05.039 | 2026-02-06T01:56:05.039Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05 17:56:05.039 | 2026-02-06T01:56:05.039Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-05 17:56:05.054 | 2026-02-06T01:56:05.054Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05 17:56:05.055 | 2026-02-06T01:56:05.055Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 479 ms
+2026-02-05 17:56:05.114 | 2026-02-06T01:56:05.113Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-05 17:56:05.134 | 2026-02-06T01:56:05.134Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-05 17:56:05.145 | 2026-02-06T01:56:05.145Z  INFO 1 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-05 17:56:05.216 | 2026-02-06T01:56:05.216Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-05 17:56:05.225 | 2026-02-06T01:56:05.225Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-05 17:56:06.309 | 2026-02-06T01:56:06.299Z ERROR 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+2026-02-05 17:56:06.309 | 
+2026-02-05 17:56:06.309 | org.postgresql.util.PSQLException: The connection attempt failed.
+2026-02-05 17:56:06.309 | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354) ~[postgresql-42.6.0.jar!/:42.6.0]
+2026-02-05 17:56:06.309 | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.0.jar!/:42.6.0]
+2026-02-05 17:56:06.309 | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.0.jar!/:42.6.0]
+2026-02-05 17:56:06.309 | 	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.0.jar!/:42.6.0]
+2026-02-05 17:56:06.309 | 	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.0.jar!/:42.6.0]
+2026-02-05 17:56:06.309 | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar!/:na]
+2026-02-05 17:56:06.309 | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar!/:na]
+2026-02-05 17:56:06.309 | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar!/:na]
+2026-02-05 17:56:06.309 | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar!/:na]
+2026-02-05 17:56:06.309 | 	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar!/:na]
+2026-02-05 17:56:06.309 | 	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar!/:na]
+2026-02-05 17:56:06.309 | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar!/:na]
+2026-02-05 17:56:06.309 | 	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:424) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:273) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:105) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:169) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.309 | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.309 | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.309 | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.309 | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.309 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.309 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.309 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.309 | 	at com.fantasyia.FantasyIaApplication.main(FantasyIaApplication.java:9) ~[!/:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.309 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+2026-02-05 17:56:06.309 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+2026-02-05 17:56:06.309 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+2026-02-05 17:56:06.309 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+2026-02-05 17:56:06.309 | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91) ~[app.jar:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.309 | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53) ~[app.jar:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.309 | 	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.309 | Caused by: java.net.UnknownHostException: db
+2026-02-05 17:56:06.309 | 	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:572) ~[na:na]
+2026-02-05 17:56:06.309 | 	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+2026-02-05 17:56:06.309 | 	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+2026-02-05 17:56:06.309 | 	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.0.jar!/:42.6.0]
+2026-02-05 17:56:06.309 | 	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.0.jar!/:42.6.0]
+2026-02-05 17:56:06.309 | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.0.jar!/:42.6.0]
+2026-02-05 17:56:06.309 | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.0.jar!/:42.6.0]
+2026-02-05 17:56:06.309 | 	... 57 common frames omitted
+2026-02-05 17:56:06.309 | 
+2026-02-05 17:56:06.310 | 2026-02-06T01:56:06.309Z  WARN 1 --- [           main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+2026-02-05 17:56:06.310 | 
+2026-02-05 17:56:06.310 | java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+2026-02-05 17:56:06.310 | 	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:273) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:105) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:169) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.310 | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.310 | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.310 | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.310 | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.310 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.310 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.310 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.310 | 	at com.fantasyia.FantasyIaApplication.main(FantasyIaApplication.java:9) ~[!/:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.310 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+2026-02-05 17:56:06.310 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+2026-02-05 17:56:06.310 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+2026-02-05 17:56:06.310 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+2026-02-05 17:56:06.310 | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91) ~[app.jar:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.310 | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53) ~[app.jar:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.310 | 	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.310 | 
+2026-02-05 17:56:06.310 | 2026-02-06T01:56:06.310Z ERROR 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2026-02-05 17:56:06.311 | 2026-02-06T01:56:06.311Z  WARN 1 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2026-02-05 17:56:06.313 | 2026-02-06T01:56:06.313Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05 17:56:06.321 | 2026-02-06T01:56:06.321Z  INFO 1 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-02-05 17:56:06.321 | 
+2026-02-05 17:56:06.321 | Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05 17:56:06.332 | 2026-02-06T01:56:06.331Z ERROR 1 --- [           main] o.s.boot.SpringApplication               : Application run failed
+2026-02-05 17:56:06.332 | 
+2026-02-05 17:56:06.332 | org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2026-02-05 17:56:06.332 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173) ~[spring-context-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936) ~[spring-context-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.332 | 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.332 | 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.332 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.332 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.332 | 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar!/:3.2.0]
+2026-02-05 17:56:06.332 | 	at com.fantasyia.FantasyIaApplication.main(FantasyIaApplication.java:9) ~[!/:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.332 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+2026-02-05 17:56:06.332 | 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+2026-02-05 17:56:06.332 | 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+2026-02-05 17:56:06.332 | 	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+2026-02-05 17:56:06.332 | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:91) ~[app.jar:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.332 | 	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:53) ~[app.jar:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.332 | 	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:58) ~[app.jar:0.0.1-SNAPSHOT]
+2026-02-05 17:56:06.332 | Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2026-02-05 17:56:06.332 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:223) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:169) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771) ~[spring-beans-6.1.1.jar!/:6.1.1]
+2026-02-05 17:56:06.332 | 	... 23 common frames omitted
+2026-02-05 17:56:06.332 | Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+2026-02-05 17:56:06.332 | 	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:190) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:86) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:141) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:344) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:105) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:129) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.3.1.Final.jar!/:6.3.1.Final]
+2026-02-05 17:56:06.332 | 	... 38 common frames omitted
+2026-02-05 17:56:06.332 | 
+2026-02-05 17:57:11.035 | 
+2026-02-05 17:57:11.035 |   .   ____          _            __ _ _
+2026-02-05 17:57:11.035 |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-02-05 17:57:11.035 | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-02-05 17:57:11.035 |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-02-05 17:57:11.035 |   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-02-05 17:57:11.035 |  =========|_|==============|___/=/_/_/_/
+2026-02-05 17:57:11.036 |  :: Spring Boot ::                (v3.2.0)
+2026-02-05 17:57:11.036 | 
+2026-02-05 17:57:11.078 | 2026-02-06T01:57:11.077Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Starting FantasyIaApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1 (/app.jar started by root in /)
+2026-02-05 17:57:11.079 | 2026-02-06T01:57:11.079Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-05 17:57:11.382 | 2026-02-06T01:57:11.381Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-05 17:57:11.389 | 2026-02-06T01:57:11.389Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2026-02-05 17:57:11.594 | 2026-02-06T01:57:11.594Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-05 17:57:11.598 | 2026-02-06T01:57:11.598Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05 17:57:11.598 | 2026-02-06T01:57:11.598Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-05 17:57:11.613 | 2026-02-06T01:57:11.612Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05 17:57:11.613 | 2026-02-06T01:57:11.613Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 493 ms
+2026-02-05 17:57:11.676 | 2026-02-06T01:57:11.675Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-05 17:57:11.697 | 2026-02-06T01:57:11.697Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-05 17:57:11.709 | 2026-02-06T01:57:11.709Z  INFO 1 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-05 17:57:11.785 | 2026-02-06T01:57:11.785Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-05 17:57:11.794 | 2026-02-06T01:57:11.794Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-05 17:57:11.865 | 2026-02-06T01:57:11.865Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@42cf6349
+2026-02-05 17:57:11.865 | 2026-02-06T01:57:11.865Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-05 17:57:11.985 | 2026-02-06T01:57:11.984Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-05 17:57:11.986 | 2026-02-06T01:57:11.986Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 17:57:11.999 | 2026-02-06T01:57:11.999Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-05 17:57:12.011 | 2026-02-06T01:57:12.011Z  WARN 1 --- [           main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-02-05 17:57:12.160 | 2026-02-06T01:57:12.160Z  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12266084, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6da646b8, org.springframework.security.web.context.SecurityContextHolderFilter@2c7375da, org.springframework.security.web.header.HeaderWriterFilter@4470106b, org.springframework.web.filter.CorsFilter@2a65e237, org.springframework.security.web.csrf.CsrfFilter@5dacf18d, org.springframework.security.web.authentication.logout.LogoutFilter@f591271, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ceb11f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@775c4054, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b2e931, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a48c398, org.springframework.security.web.access.ExceptionTranslationFilter@185339ed, org.springframework.security.web.access.intercept.AuthorizationFilter@2d459bda]
+2026-02-05 17:57:12.253 | 2026-02-06T01:57:12.253Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-05 17:57:12.258 | 2026-02-06T01:57:12.257Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Started FantasyIaApplication in 1.339 seconds (process running for 1.521)
+2026-02-05 17:57:15.882 | 2026-02-06T01:57:15.882Z  INFO 1 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-05 17:57:15.882 | 2026-02-06T01:57:15.882Z  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-05 17:57:15.882 | 2026-02-06T01:57:15.882Z  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-02-05 17:57:15.886 | 2026-02-06T01:57:15.886Z  WARN 1 --- [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-05 17:57:15.890 | 2026-02-06T01:57:15.890Z  WARN 1 --- [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-05 17:58:05.193 | 2026-02-06T01:58:05.192Z  INFO 1 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 17:58:05.194 | 2026-02-06T01:58:05.193Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-05 17:58:05.196 | 2026-02-06T01:58:05.196Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-05 17:58:05.725 | 
+2026-02-05 17:58:05.725 |   .   ____          _            __ _ _
+2026-02-05 17:58:05.725 |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-02-05 17:58:05.725 | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-02-05 17:58:05.725 |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-02-05 17:58:05.725 |   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-02-05 17:58:05.725 |  =========|_|==============|___/=/_/_/_/
+2026-02-05 17:58:05.726 |  :: Spring Boot ::                (v3.2.0)
+2026-02-05 17:58:05.726 | 
+2026-02-05 17:58:05.768 | 2026-02-06T01:58:05.768Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Starting FantasyIaApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1 (/app.jar started by root in /)
+2026-02-05 17:58:05.769 | 2026-02-06T01:58:05.769Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-05 17:58:06.076 | 2026-02-06T01:58:06.075Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-05 17:58:06.083 | 2026-02-06T01:58:06.083Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2026-02-05 17:58:06.279 | 2026-02-06T01:58:06.279Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-05 17:58:06.283 | 2026-02-06T01:58:06.283Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05 17:58:06.283 | 2026-02-06T01:58:06.283Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-05 17:58:06.301 | 2026-02-06T01:58:06.301Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05 17:58:06.302 | 2026-02-06T01:58:06.302Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 492 ms
+2026-02-05 17:58:06.358 | 2026-02-06T01:58:06.358Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-05 17:58:06.379 | 2026-02-06T01:58:06.379Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-05 17:58:06.391 | 2026-02-06T01:58:06.391Z  INFO 1 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-05 17:58:06.463 | 2026-02-06T01:58:06.463Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-05 17:58:06.472 | 2026-02-06T01:58:06.472Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-05 17:58:06.539 | 2026-02-06T01:58:06.539Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@222acad
+2026-02-05 17:58:06.540 | 2026-02-06T01:58:06.539Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-05 17:58:06.656 | 2026-02-06T01:58:06.656Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-05 17:58:06.658 | 2026-02-06T01:58:06.657Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 17:58:06.670 | 2026-02-06T01:58:06.670Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-05 17:58:06.682 | 2026-02-06T01:58:06.682Z  WARN 1 --- [           main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-02-05 17:58:06.828 | 2026-02-06T01:58:06.828Z  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4377ed24, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a30e30b, org.springframework.security.web.context.SecurityContextHolderFilter@4b50c21, org.springframework.security.web.header.HeaderWriterFilter@3593e074, org.springframework.web.filter.CorsFilter@1dcca426, org.springframework.security.web.csrf.CsrfFilter@64ed18ec, org.springframework.security.web.authentication.logout.LogoutFilter@681311a7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@28b5d5dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dacf18d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@432a6a69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e6e5da4, org.springframework.security.web.access.ExceptionTranslationFilter@2336cd91, org.springframework.security.web.access.intercept.AuthorizationFilter@6b3b2c34]
+2026-02-05 17:58:06.920 | 2026-02-06T01:58:06.920Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-05 17:58:06.924 | 2026-02-06T01:58:06.924Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Started FantasyIaApplication in 1.318 seconds (process running for 1.489)
+2026-02-05 17:58:16.015 | 2026-02-06T01:58:16.015Z  INFO 1 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 17:58:16.016 | 2026-02-06T01:58:16.016Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-05 17:58:16.017 | 2026-02-06T01:58:16.017Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-05 17:58:16.560 | 
+2026-02-05 17:58:16.560 |   .   ____          _            __ _ _
+2026-02-05 17:58:16.560 |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-02-05 17:58:16.560 | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-02-05 17:58:16.560 |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-02-05 17:58:16.560 |   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-02-05 17:58:16.560 |  =========|_|==============|___/=/_/_/_/
+2026-02-05 17:58:16.560 |  :: Spring Boot ::                (v3.2.0)
+2026-02-05 17:58:16.560 | 
+2026-02-05 17:58:16.601 | 2026-02-06T01:58:16.601Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Starting FantasyIaApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1 (/app.jar started by root in /)
+2026-02-05 17:58:16.602 | 2026-02-06T01:58:16.602Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-05 17:58:16.912 | 2026-02-06T01:58:16.912Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-05 17:58:16.921 | 2026-02-06T01:58:16.920Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2026-02-05 17:58:17.124 | 2026-02-06T01:58:17.124Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-05 17:58:17.128 | 2026-02-06T01:58:17.127Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05 17:58:17.128 | 2026-02-06T01:58:17.128Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-05 17:58:17.144 | 2026-02-06T01:58:17.143Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05 17:58:17.144 | 2026-02-06T01:58:17.144Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 501 ms
+2026-02-05 17:58:17.209 | 2026-02-06T01:58:17.209Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-05 17:58:17.233 | 2026-02-06T01:58:17.233Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-05 17:58:17.246 | 2026-02-06T01:58:17.246Z  INFO 1 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-05 17:58:17.325 | 2026-02-06T01:58:17.324Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-05 17:58:17.335 | 2026-02-06T01:58:17.334Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-05 17:58:17.408 | 2026-02-06T01:58:17.408Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@73e1ecd0
+2026-02-05 17:58:17.409 | 2026-02-06T01:58:17.409Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-05 17:58:17.537 | 2026-02-06T01:58:17.537Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-05 17:58:17.539 | 2026-02-06T01:58:17.539Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 17:58:17.553 | 2026-02-06T01:58:17.553Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-05 17:58:17.564 | 2026-02-06T01:58:17.563Z  WARN 1 --- [           main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-02-05 17:58:17.717 | 2026-02-06T01:58:17.717Z  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f65aa58, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@749f61a3, org.springframework.security.web.context.SecurityContextHolderFilter@37f41a81, org.springframework.security.web.header.HeaderWriterFilter@1c3d9e28, org.springframework.web.filter.CorsFilter@36d7a68a, org.springframework.security.web.csrf.CsrfFilter@6106dfb6, org.springframework.security.web.authentication.logout.LogoutFilter@72f35a31, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d556461, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49bb808f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@563ada5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42dd7d82, org.springframework.security.web.access.ExceptionTranslationFilter@151a6598, org.springframework.security.web.access.intercept.AuthorizationFilter@b339a08]
+2026-02-05 17:58:17.808 | 2026-02-06T01:58:17.808Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-05 17:58:17.812 | 2026-02-06T01:58:17.812Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Started FantasyIaApplication in 1.365 seconds (process running for 1.532)
+2026-02-05 17:58:34.227 | 2026-02-06T01:58:34.227Z  INFO 1 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-05 17:58:34.227 | 2026-02-06T01:58:34.227Z  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-05 17:58:34.228 | 2026-02-06T01:58:34.228Z  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-05 17:58:34.233 | 2026-02-06T01:58:34.233Z  WARN 1 --- [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-05 17:58:34.237 | 2026-02-06T01:58:34.237Z  WARN 1 --- [nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-02-05 18:00:15.029 | 2026-02-06T02:00:15.029Z  INFO 1 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 18:00:15.030 | 2026-02-06T02:00:15.030Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-05 18:00:15.032 | 2026-02-06T02:00:15.032Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-05 18:00:15.547 | 
+2026-02-05 18:00:15.547 |   .   ____          _            __ _ _
+2026-02-05 18:00:15.547 |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-02-05 18:00:15.547 | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-02-05 18:00:15.547 |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-02-05 18:00:15.547 |   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-02-05 18:00:15.547 |  =========|_|==============|___/=/_/_/_/
+2026-02-05 18:00:15.547 |  :: Spring Boot ::                (v3.2.0)
+2026-02-05 18:00:15.547 | 
+2026-02-05 18:00:15.589 | 2026-02-06T02:00:15.588Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Starting FantasyIaApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 1 (/app.jar started by root in /)
+2026-02-05 18:00:15.589 | 2026-02-06T02:00:15.589Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-05 18:00:15.886 | 2026-02-06T02:00:15.886Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-05 18:00:15.894 | 2026-02-06T02:00:15.894Z  INFO 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2026-02-05 18:00:16.091 | 2026-02-06T02:00:16.091Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-05 18:00:16.097 | 2026-02-06T02:00:16.097Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05 18:00:16.097 | 2026-02-06T02:00:16.097Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-05 18:00:16.112 | 2026-02-06T02:00:16.112Z  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05 18:00:16.112 | 2026-02-06T02:00:16.112Z  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 486 ms
+2026-02-05 18:00:16.175 | 2026-02-06T02:00:16.175Z  INFO 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-05 18:00:16.198 | 2026-02-06T02:00:16.197Z  INFO 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-02-05 18:00:16.210 | 2026-02-06T02:00:16.210Z  INFO 1 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-05 18:00:16.288 | 2026-02-06T02:00:16.288Z  INFO 1 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-05 18:00:16.298 | 2026-02-06T02:00:16.297Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-05 18:00:16.367 | 2026-02-06T02:00:16.367Z  INFO 1 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bbb8c16
+2026-02-05 18:00:16.367 | 2026-02-06T02:00:16.367Z  INFO 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-05 18:00:16.496 | 2026-02-06T02:00:16.496Z  INFO 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-05 18:00:16.498 | 2026-02-06T02:00:16.498Z  INFO 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-05 18:00:16.512 | 2026-02-06T02:00:16.512Z  WARN 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-05 18:00:16.523 | 2026-02-06T02:00:16.523Z  WARN 1 --- [           main] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2026-02-05 18:00:16.684 | 2026-02-06T02:00:16.684Z  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59a5bb61, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f65aa58, org.springframework.security.web.context.SecurityContextHolderFilter@46d148bd, org.springframework.security.web.header.HeaderWriterFilter@6fa3def8, org.springframework.web.filter.CorsFilter@749f61a3, org.springframework.security.web.csrf.CsrfFilter@71316cd7, org.springframework.security.web.authentication.logout.LogoutFilter@478089b6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b339a08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47c81e89, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49bb808f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36d7a68a, org.springframework.security.web.access.ExceptionTranslationFilter@5f33e6d, org.springframework.security.web.access.intercept.AuthorizationFilter@77cc6a28]
+2026-02-05 18:00:16.781 | 2026-02-06T02:00:16.781Z  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-05 18:00:16.785 | 2026-02-06T02:00:16.785Z  INFO 1 --- [           main] com.fantasyia.FantasyIaApplication       : Started FantasyIaApplication in 1.356 seconds (process running for 1.53)
